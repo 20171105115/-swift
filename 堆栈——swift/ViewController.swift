@@ -11,6 +11,132 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var number: UITextField!
+    var Flag = 0//判断前边是否为运算符 1是0不是
+    var Temp = 0.0//用于存储每个运算数
+    @IBAction func NumberOne(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "1"
+        }else{
+            number.text = "1"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberTwo(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "2"
+        }else{
+            number.text = "2"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func numberThree(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "3"
+        }else{
+            number.text = "3"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberFour(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "4"
+        }else{
+            number.text = "4"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberFive(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "5"
+        }else{
+            number.text = "5"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberSix(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "6"
+        }else{
+            number.text = "6"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberSeven(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "7"
+        }else{
+            number.text = "7"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberEight(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "8"
+        }else{
+            number.text = "8"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberNine(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "9"
+        }else{
+            number.text = "9"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberPlus(_ sender: Any) {
+        
+    }
+    
+    @IBAction func Numbersub(_ sender: Any) {
+        
+    }
+    
+    @IBAction func NumberZero(_ sender: Any) {
+        if Flag == 0{
+            number.text! += "0"
+        }else{
+            number.text = "0"
+        }
+        Flag = 0
+        Temp = Double(number.text!)!
+    }
+    
+    @IBAction func NumberRide(_ sender: Any) {
+        
+    }
+    
+    @IBAction func NumberDivide(_ sender: Any) {
+        
+    }
+    
+    @IBAction func NumberPower(_ sender: Any) {
+        
+    }
+    
+    @IBAction func NumberEqual(_ sender: Any) {
+        
+    }
+    
     
     
     var str = [String]()
